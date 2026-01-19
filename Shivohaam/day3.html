@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>day 3 tables and listing</title>
+  </head>
+  <body style="background-color: lightblue">
+    <h1>Class Ojaas Student list</h1>
+    <!-- <p>
+      there are 3 types of lists in HTML: ordered, unordered, and description
+      lists.
+    </p>
+    <h2>Ordered List</h2>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ol>
+    <h2>Unordered List</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+    <h2>Description List</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML is a standard markup language for creating Web pages.</dd>
+      <dt>CSS</dt>
+      <dd>CSS is a language that describes the style of an HTML document.</dd>
+      <dt>JavaScript</dt>
+      <dd>JavaScript is the programming language of the Web.</dd>
+      <dt>Python</dt>
+      <dd>Python is a programming language that lets you work quickly.</dd>
+    </dl> -->
+
+    <h2>Student Information Table</h2>
+
+    <table class="student-table">
+      <tr>
+        <th>Student Name</th>
+        <th>Roll Number</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td>Amit</td>
+        <td>1</td>
+        <td>10A</td>
+      </tr>
+      <tr>
+        <td>Rahul</td>
+        <td>2</td>
+        <td>10B</td>
+      </tr>
+    </table>
+
+    <h2>CSS Box Model</h2>
+    <div id="margin" class="pm">
+      <h2>Margin</h2>
+      <p style="margin: 50px; background-color: white">
+        Margin is the space outside the border of an element. It creates space
+        between the element and its neighboring elements.
+      </p>
+    </div>
+    <div id="padding" class="pm">
+      <h2>Padding</h2>
+      <p style="padding: 50px; background-color: white">
+        Padding is the space inside the border of an element. It creates space
+        between the content of the element and its border.
+      </p>
+    </div>
+
+    <h2>Selector in CSS</h2>
+    <ol>
+      <li>ID Selector # => ID selector</li>
+      <li>Class Selector . => Class selector</li>
+      <li>Element Selector element => Element selector</li>
+      <li>Universal Selector * => Universal selector</li>
+      <li>Grouping Selector element, element => Grouping selector</li>
+      <li>Descendant Selector element element => Descendant selector</li>
+      <li>Child Selector element>element => Child selector</li>
+      <li>
+        Adjacent Sibling Selector element+element => Adjacent sibling selector
+      </li>
+    </ol>
+
+    <!-- <br />
+    . => Class selector <br />
+    element => Element selector <br />
+    * => Universal selector <br />
+    element, element => Grouping selector <br />
+    element element => Descendant selector <br />
+    element>element => Child selector <br />
+    element+element => Adjacent sibling selector <br /> -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h2 {
+        color: red;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: right;
+        border-collapse: collapse;
+      }
+      .student-table {
+        width: 50%;
+        border: 2px solid black;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      p {
+        color: blue;
+      }
+      p,
+      h2 {
+        font-family: Arial, sans-serif;
+      }
+      .pm {
+        border: 2px solid black;
+        margin-bottom: 20px;
+      }
+      #margin {
+        background-color: lightgreen;
+      }
+      #padding {
+        background-color: lightcoral;
+      }
+    </style>
+
+    <p>Students enrolled in Class Ojaas:</p>
+  </body>
+</html>
